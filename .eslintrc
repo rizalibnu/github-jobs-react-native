@@ -1,0 +1,62 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "env": {
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["airbnb", "plugin:jsx-a11y/recommended"],
+  "plugins": [
+    "flowtype",
+    "react",
+    "react-native",
+    "jsx-a11y"
+  ],
+  "globals": {
+    "__DEV__": true,
+    "__dirname": false,
+    "__fbBatchedBridgeConfig": false,
+    "alert": false,
+    "cancelAnimationFrame": false,
+    "cancelIdleCallback": false,
+    "clearImmediate": true,
+    "clearInterval": false,
+    "clearTimeout": false,
+    "console": false,
+    "document": false,
+    "escape": false,
+    "Event": false,
+    "EventTarget": false,
+    "exports": false,
+    "fetch": false,
+    "FormData": false,
+    "global": false,
+    "jest": false,
+    "Map": true,
+    "module": false,
+    "navigator": false,
+    "process": false,
+    "Promise": true,
+    "requestAnimationFrame": true,
+    "requestIdleCallback": true,
+    "require": false,
+    "Set": true,
+    "setImmediate": true,
+    "setInterval": false,
+    "setTimeout": false,
+    "window": false,
+    "XMLHttpRequest": false,
+    "pit": false,
+    "type": true
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, {"extensions": [".js"]}],
+    "no-underscore-dangle": 0,
+    "react/forbid-prop-types": 0,
+    "max-len": 0,
+    "no-console": 0,
+    "object-curly-newline": 0,
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
+  }
+}
